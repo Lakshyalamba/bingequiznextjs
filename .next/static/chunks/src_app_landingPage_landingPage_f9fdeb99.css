@@ -1,0 +1,124 @@
+/* [project]/src/app/landingPage/landingPage.css [app-client] (css) */
+body {
+  background-color: #0f0f0f;
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+}
+
+.landing-container {
+  color: #fff;
+  background: linear-gradient(to right, #1c1c1c, #292929);
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+  background-color: #0009;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  filter: drop-shadow(0 0 2px #ff4757);
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: #ff6b81;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.auth-button .btn {
+  color: #fff;
+  background-color: #ff4757;
+  border-radius: 6px;
+  padding: .6rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  box-shadow: 0 0 10px #ff47574d;
+}
+
+.auth-button .btn:hover {
+  background-color: #ff6b81;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff6b8199;
+}
+
+.hero {
+  text-align: center;
+  background-blend-mode: overlay;
+  background: #0009 url("/background.avif") center / cover no-repeat;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+}
+
+.hero-text h1 {
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff4757;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.hero-text p {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 4px #000;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.movie-section {
+  text-align: center;
+  background-color: #111;
+  padding: 3rem 2rem;
+}
+
+.movie-section h2 {
+  color: #ff6b81;
+  border-bottom: 2px solid #ff6b81;
+  margin-bottom: 2rem;
+  padding-bottom: 5px;
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
+.movie-posters {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.movie-posters img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 150px;
+  height: 225px;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: 0 4px 10px #0006;
+}
+
+.movie-posters img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px #ff6b814d;
+}
+
+
+/*# sourceMappingURL=src_app_landingPage_landingPage_f9fdeb99.css.map*/

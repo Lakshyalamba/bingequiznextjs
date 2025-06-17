@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+}
+
+.landing-container {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #1c1c1c, #292929);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 2px #ff4757);
+}
+
+.logo span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff6b81;
+}
+
+.auth-button .btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff4757;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+}
+
+.auth-button .btn:hover {
+  background-color: #ff6b81;
+  box-shadow: 0 0 20px rgba(255, 107, 129, 0.6);
+  transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: url('/background.avif') no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #ff4757;
+}
+
+.hero-text p {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* MOVIE SECTION */
+.movie-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #111;
+}
+
+.movie-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #ff6b81;
+  border-bottom: 2px solid #ff6b81;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.movie-posters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.movie-posters img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-posters img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(255, 107, 129, 0.3);
+}

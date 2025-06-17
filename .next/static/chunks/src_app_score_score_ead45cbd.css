@@ -1,0 +1,81 @@
+/* [project]/src/app/score/score.css [app-client] (css) */
+.score-page {
+  text-align: center;
+  background-blend-mode: overlay;
+  background: #0009 url("/background.avif") center / cover no-repeat fixed;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  font-family: Segoe UI, sans-serif;
+  display: flex;
+}
+
+.score-container {
+  text-align: center;
+  z-index: 1;
+  background-color: #fffc;
+  border-radius: 12px;
+  max-width: 600px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 0 20px #0000004d;
+}
+
+.score-container h1 {
+  color: #3498db;
+  text-shadow: 2px 2px 5px #0003;
+  margin-bottom: 25px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.score-details .score {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.message {
+  color: #000;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.score-breakdown {
+  color: #000;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.home-button {
+  color: #fff;
+  background-color: #2980b9;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color .3s, transform .2s;
+  display: inline-block;
+}
+
+.home-button:hover {
+  background-color: #1c5980;
+  transform: scale(1.05);
+}
+
+.home-button:active {
+  transform: scale(1);
+}
+
+
+/*# sourceMappingURL=src_app_score_score_ead45cbd.css.map*/

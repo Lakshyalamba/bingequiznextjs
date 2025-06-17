@@ -1,0 +1,163 @@
+/* Background and Layout */
+.home-container {
+  height: 100vh;
+  background: url('/background.avif') no-repeat center center/cover;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  overflow-y: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Back Link */
+.back-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  z-index: 1;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #ff4757;
+}
+
+/* Quiz Container Box */
+.quiz-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(31, 42, 64, 0.9);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 1;
+}
+
+.quiz-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #ff6b81;
+  font-weight: bold;
+}
+
+/* Section Headings */
+.movie-section h3 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6b81;
+  border-bottom: 2px solid #ff6b81;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.movie-section {
+  padding-bottom: 2rem;
+}
+
+/* Movie Posters Grid */
+.movie-posters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Movie Poster Cards */
+.movie-posters img {
+  width: 130px;
+  height: 190px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.movie-posters img:hover {
+  transform: scale(1.05);
+  border-color: #ff6b81;
+}
+
+.movie-posters .selected {
+  border-color: #ff4757;
+  box-shadow: 0 0 12px rgba(255, 107, 129, 0.7);
+}
+
+/* Quiz Options */
+.quiz-options {
+  margin-top: 2rem;
+}
+
+.quiz-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-option label {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.quiz-option input,
+.quiz-option select {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  width: 200px;
+}
+
+.quiz-option input {
+  background-color: #2f3a53;
+  color: white;
+}
+
+.quiz-option select {
+  background-color: #2f3a53;
+  color: white;
+}
+
+.quiz-option input:focus,
+.quiz-option select:focus {
+  outline: none;
+  background-color: #3a4a66;
+}
+
+/* Start Quiz Button */
+.start-quiz-btn {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-quiz-btn:hover {
+  background-color: #ff6b81;
+  transform: scale(1.05);
+}

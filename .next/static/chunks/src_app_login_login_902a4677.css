@@ -1,0 +1,115 @@
+/* [project]/src/app/login/login.css [app-client] (css) */
+.login-container {
+  color: #fff;
+  background: url("/background.avif") center / cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.login-container:before {
+  content: "";
+  z-index: 0;
+  background: #000000b3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back-button {
+  color: #fff;
+  z-index: 1;
+  background-color: #ffffff26;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.back-button:hover {
+  background-color: #ffffff4d;
+}
+
+.form-box {
+  text-align: center;
+  z-index: 1;
+  background-color: #1e1e1ee6;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem;
+  position: relative;
+  box-shadow: 0 8px 25px #0009;
+}
+
+.form-box h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.form-box form {
+  flex-direction: column;
+  display: flex;
+}
+
+.form-box input {
+  color: #fff;
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  padding: .9rem;
+  font-size: 1rem;
+  transition: background-color .3s;
+}
+
+.form-box input:focus {
+  background-color: #3a3a3a;
+  outline: none;
+}
+
+.form-box button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 8px;
+  padding: .9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.form-box button:hover {
+  background-color: #ff6b81;
+}
+
+.form-box p {
+  color: #ccc;
+  margin-top: 1.2rem;
+  font-size: .95rem;
+}
+
+.form-box span {
+  color: #1e90ff;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+.form-box span:hover {
+  color: #63b3ed;
+}
+
+
+/*# sourceMappingURL=src_app_login_login_902a4677.css.map*/

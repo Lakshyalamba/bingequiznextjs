@@ -1,0 +1,81 @@
+.score-page {
+  min-height: 100vh;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: url('/background.avif') no-repeat center center/cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.score-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.score-container h1 {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.score-details .score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #e74c3c; 
+}
+
+.message {
+  font-style: italic;
+  color: black;
+  margin-top: 20px;
+}
+
+.score-breakdown {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.home-button {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2980b9; 
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: #1c5980; 
+  transform: scale(1.05);
+}
+
+.home-button:active {
+  transform: scale(1);
+}

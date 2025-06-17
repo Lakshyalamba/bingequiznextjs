@@ -1,0 +1,108 @@
+/* [project]/src/app/landingPage.css [app-client] (css) */
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+}
+
+.landing-container {
+  color: #fff;
+  background: linear-gradient(to right, #1c1c1c, #292929);
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.navbar {
+  background-color: #000000e6;
+  border-bottom: 1px solid #444;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.auth-button .btn {
+  color: #fff;
+  background-color: #ff4757;
+  border-radius: 5px;
+  padding: .6rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.auth-button .btn:hover {
+  background-color: #ff6b81;
+}
+
+.hero {
+  text-align: center;
+  background-blend-mode: overlay;
+  background: #000000b3 url("/background.jpg") center / cover no-repeat;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+}
+
+.hero-text h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.hero-text p {
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.movie-section {
+  text-align: center;
+  background-color: #111;
+  padding: 3rem 2rem;
+}
+
+.movie-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.movie-posters {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.movie-posters img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 150px;
+  height: 225px;
+  transition: transform .3s;
+}
+
+.movie-posters img:hover {
+  transform: scale(1.05);
+}
+
+
+/*# sourceMappingURL=src_app_landingPage_4aa2f632.css.map*/

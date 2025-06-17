@@ -1,0 +1,109 @@
+/* [project]/src/app/questions/questions.css [app-client] (css) */
+.questions-container {
+  text-align: center;
+  background-blend-mode: overlay;
+  color: #fff;
+  background: #0009 url("/background.avif") center / cover no-repeat;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.questions-container:before {
+  content: "";
+  z-index: -1;
+  background: #00000080;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.question-card {
+  background: #292929e6;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  transition: transform .3s ease-in-out;
+  box-shadow: 0 0 20px #0009;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);
+}
+
+.question-card h3 {
+  color: #ff6b81;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.options {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.options button {
+  color: #fff;
+  cursor: pointer;
+  background: #ff4757;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background .3s, transform .3s;
+}
+
+.options button:hover {
+  background: #ff1c1c;
+  transform: scale(1.05);
+}
+
+.options button:active {
+  background: #e60000;
+  transform: scale(1);
+}
+
+p {
+  color: #ddd;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.progress {
+  color: #ff6b81;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.back-button {
+  color: #fff;
+  background-color: #ffffff1a;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color .2s;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button:hover {
+  background-color: #fff3;
+}
+
+
+/*# sourceMappingURL=src_app_questions_questions_75ba888e.css.map*/
