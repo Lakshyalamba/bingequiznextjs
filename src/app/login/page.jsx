@@ -2,6 +2,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { auth } from "../../firebase";
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+} from "firebase/auth";
 import "./login.css";
 
 export default function LoginPage() {
@@ -9,10 +14,21 @@ export default function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    router.push('/home');
+    try {
+      if (isLogin) {
+        await signInWithEmailAndPassword(auth, email, password);
+        router.push("/home");
+      } else {
+        await createUserWithEmailAndPassword(auth, email, password);
+        alert("Account created! You can now log in.");
+        setIsLogin(true);
+      }
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   const toggleMode = () => setIsLogin(!isLogin);

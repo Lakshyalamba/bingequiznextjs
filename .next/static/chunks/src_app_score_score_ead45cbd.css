@@ -1,80 +1,93 @@
 /* [project]/src/app/score/score.css [app-client] (css) */
 .score-page {
-  text-align: center;
   background-blend-mode: overlay;
-  background: #0009 url("/background.avif") center / cover no-repeat fixed;
-  flex-grow: 1;
+  color: #fff;
+  text-align: center;
+  background: #000000b3 url("/background.avif") center / cover no-repeat fixed;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem;
   font-family: Segoe UI, sans-serif;
   display: flex;
 }
 
 .score-container {
-  text-align: center;
-  z-index: 1;
-  background-color: #fffc;
-  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, #fffc, #f8f8f8dd);
+  border-radius: 18px;
+  width: 100%;
   max-width: 600px;
-  padding: 40px;
-  position: relative;
-  box-shadow: 0 0 20px #0000004d;
+  padding: 3rem;
+  animation: .6s ease-in-out pop-in;
+  box-shadow: 0 10px 30px #ff6b8166;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .score-container h1 {
-  color: #3498db;
-  text-shadow: 2px 2px 5px #0003;
-  margin-bottom: 25px;
-  font-size: 3rem;
-  font-weight: bold;
+  color: #e84393;
+  text-shadow: 1px 1px 4px #000;
+  margin-bottom: 1.8rem;
+  font-size: 2.8rem;
 }
 
 .score-details .score {
   color: #2c3e50;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .highlight {
-  color: #e74c3c;
+  color: #ff4757;
   font-weight: bold;
 }
 
 .message {
-  color: #000;
-  margin-top: 20px;
+  color: #2f2f2f;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 
 .score-breakdown {
-  color: #000;
-  margin-top: 15px;
-  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .home-button {
   color: #fff;
-  background-color: #2980b9;
-  border-radius: 8px;
-  margin-top: 30px;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  font-weight: 500;
+  background: linear-gradient(to right, #ff4757, #ff6b81);
+  border-radius: 10px;
+  padding: .9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  transition: background-color .3s, transform .2s;
+  transition: background .3s, transform .3s;
   display: inline-block;
+  box-shadow: 0 0 12px #ff475780;
 }
 
 .home-button:hover {
-  background-color: #1c5980;
+  background: linear-gradient(to right, #ff6b81, #ff4757);
   transform: scale(1.05);
 }
 
 .home-button:active {
-  transform: scale(1);
+  transform: scale(.98);
 }
 
 

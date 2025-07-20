@@ -1,81 +1,99 @@
+/* Full page layout */
 .score-page {
   min-height: 100vh;
-  text-align: center;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem;
   background: url('/background.avif') no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.6);
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', sans-serif;
-}
-
-.score-container {
+  color: #fff;
   text-align: center;
-  padding: 40px;
+}
+
+/* Score Card Box */
+.score-container {
+  background: linear-gradient(135deg, #ffffffcc, #f8f8f8dd);
+  padding: 3rem;
   max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(255, 107, 129, 0.4);
+  backdrop-filter: blur(8px);
+  animation: pop-in 0.6s ease-in-out;
 }
 
+@keyframes pop-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Heading */
 .score-container h1 {
-  font-size: 3rem;
-  color: #3498db;
-  margin-bottom: 25px;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 2.8rem;
+  color: #e84393;
+  margin-bottom: 1.8rem;
+  text-shadow: 1px 1px 4px #000;
 }
 
+/* Main Score */
 .score-details .score {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
+/* Colored Highlights */
 .highlight {
+  color: #ff4757;
   font-weight: bold;
-  color: #e74c3c; 
 }
 
+/* Message Text */
 .message {
   font-style: italic;
-  color: black;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #2f2f2f;
+  margin-bottom: 1.5rem;
 }
 
+/* Breakdown */
 .score-breakdown {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
+/* Button */
 .home-button {
-  margin-top: 30px;
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #2980b9; 
+  padding: 0.9rem 2rem;
+  background: linear-gradient(to right, #ff4757, #ff6b81);
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 71, 87, 0.5);
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .home-button:hover {
-  background-color: #1c5980; 
+  background: linear-gradient(to right, #ff6b81, #ff4757);
   transform: scale(1.05);
 }
 
 .home-button:active {
-  transform: scale(1);
+  transform: scale(0.98);
 }

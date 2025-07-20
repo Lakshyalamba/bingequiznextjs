@@ -13,28 +13,28 @@ export default function ScorePage() {
   return (
     <div className="score-page">
       <div className="score-container">
-        <h1>Your Quiz Result</h1>
-        
+        <h1>🎉 Quiz Completed!</h1>
+
         <div className="score-details">
           <p className="score">
-            <span className="highlight">{score}</span> / <span className="highlight">{total}</span>
+            🎯 <span className="highlight">{score}</span> / <span className="highlight">{total}</span>
           </p>
         </div>
 
         <p className="message">
           {score === total
-            ? "Perfect Score! You're a true fan!"
+            ? "🏆 Perfect Score! You're a true movie buff!"
             : score > total / 2
-            ? "Great job! You know your stuff!"
-            : "Keep watching movies and listening to music, you'll get better!"}
+            ? "🔥 Great job! You know your stuff!"
+            : "📺 Keep binge-watching & you'll improve!"}
         </p>
 
         <div className="score-breakdown">
-          <p>Incorrect: <span className="highlight">{incorrect}</span> ({Math.round(incorrectPercentage)}%)</p>
-          <p>Score Percentage: <span className="highlight">{Math.round(scorePercentage)}%</span></p>
+          ❌ Incorrect: <span className="highlight">{incorrect}</span> ({Math.round(incorrectPercentage)}%)<br />
+          ✅ Score Percentage: <span className="highlight">{Math.round(scorePercentage)}%</span>
         </div>
 
-        <a href="/home" className="home-button">Go Back to Home</a>
+        <a href="/home" className="home-button">🔙 Go Back to Home</a>
       </div>
     </div>
   );

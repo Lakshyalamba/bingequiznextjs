@@ -118,56 +118,6 @@ const allQuestions = {
                 "Time lapse"
             ],
             answer: "PASIV device"
-        },
-        {
-            question: "What is the final setting in the dream layers?",
-            options: [
-                "Mountain fortress",
-                "City street",
-                "Hotel",
-                "Beach"
-            ],
-            answer: "Mountain fortress"
-        },
-        {
-            question: "Who plays Eames?",
-            options: [
-                "Tom Hardy",
-                "Joseph Gordon-Levitt",
-                "Cillian Murphy",
-                "Ken Watanabe"
-            ],
-            answer: "Tom Hardy"
-        },
-        {
-            question: "How do they wake up from the dream?",
-            options: [
-                "Explosion",
-                "Kick",
-                "Death",
-                "Timer"
-            ],
-            answer: "Kick"
-        },
-        {
-            question: "What genre is Inception?",
-            options: [
-                "Sci-fi",
-                "Horror",
-                "Fantasy",
-                "Documentary"
-            ],
-            answer: "Sci-fi"
-        },
-        {
-            question: "What does the last scene suggest?",
-            options: [
-                "He’s still dreaming",
-                "He’s awake",
-                "He dies",
-                "Open ending"
-            ],
-            answer: "Open ending"
         }
     ],
     joker: [
@@ -270,59 +220,9 @@ const allQuestions = {
                 "Comedy show"
             ],
             answer: "TV appearance"
-        },
-        {
-            question: "What is written on Arthur’s sign?",
-            options: [
-                "Smile",
-                "Everything is a joke",
-                "Don’t forget to laugh",
-                "Help me"
-            ],
-            answer: "Everything is a joke"
-        },
-        {
-            question: "What is the theme of Joker?",
-            options: [
-                "Heroism",
-                "Comedy",
-                "Mental illness",
-                "Family"
-            ],
-            answer: "Mental illness"
-        },
-        {
-            question: "How does the movie end?",
-            options: [
-                "Joker escapes",
-                "Joker is killed",
-                "Open ending",
-                "Joker arrested"
-            ],
-            answer: "Open ending"
-        },
-        {
-            question: "What’s Arthur’s dream?",
-            options: [
-                "To be loved",
-                "To be famous",
-                "To be a hero",
-                "To host a show"
-            ],
-            answer: "To be loved"
-        },
-        {
-            question: "What’s the iconic line?",
-            options: [
-                "Why so serious?",
-                "You wouldn’t get it",
-                "Let’s put a smile",
-                "I'm Batman"
-            ],
-            answer: "You wouldn’t get it"
         }
     ],
-    Avatar: [
+    avatar: [
         {
             question: "What is the name of the alien species in Avatar?",
             options: [
@@ -422,59 +322,9 @@ const allQuestions = {
                 "Teacher"
             ],
             answer: "Marine"
-        },
-        {
-            question: "Who is Dr. Grace Augustine?",
-            options: [
-                "Soldier",
-                "Avatar Trainer",
-                "Scientist",
-                "Spy"
-            ],
-            answer: "Scientist"
-        },
-        {
-            question: "What is the planet's moon name?",
-            options: [
-                "Pandora",
-                "Alpha",
-                "Zion",
-                "Xandar"
-            ],
-            answer: "Pandora"
-        },
-        {
-            question: "Which studio made Avatar?",
-            options: [
-                "Warner Bros",
-                "20th Century Fox",
-                "Marvel",
-                "Universal"
-            ],
-            answer: "20th Century Fox"
-        },
-        {
-            question: "What happens to Jake at the end?",
-            options: [
-                "Dies",
-                "Returns to Earth",
-                "Stays Na'vi",
-                "Becomes RDA Leader"
-            ],
-            answer: "Stays Na'vi"
-        },
-        {
-            question: "How do Na'vi connect to nature?",
-            options: [
-                "Their eyes",
-                "Their tails",
-                "Their hair",
-                "Chants"
-            ],
-            answer: "Their hair"
         }
     ],
-    Venom: [
+    venom: [
         {
             question: "What is the name of the main character who becomes Venom?",
             options: [
@@ -574,59 +424,9 @@ const allQuestions = {
                 "Donuts"
             ],
             answer: "Brains"
-        },
-        {
-            question: "What is Venom’s weakness?",
-            options: [
-                "Fire",
-                "Ice",
-                "Bullets",
-                "Radiation"
-            ],
-            answer: "Fire"
-        },
-        {
-            question: "How does Eddie communicate with Venom?",
-            options: [
-                "Via phone",
-                "Telepathy",
-                "In his head",
-                "Through dreams"
-            ],
-            answer: "In his head"
-        },
-        {
-            question: "Who plays the villain Riot’s host?",
-            options: [
-                "Riz Ahmed",
-                "Tom Holland",
-                "Woody Harrelson",
-                "Jake Gyllenhaal"
-            ],
-            answer: "Riz Ahmed"
-        },
-        {
-            question: "What happens to Riot?",
-            options: [
-                "Escapes",
-                "Killed",
-                "Returns home",
-                "Becomes friend"
-            ],
-            answer: "Killed"
-        },
-        {
-            question: "What does Venom call Eddie?",
-            options: [
-                "Host",
-                "Partner",
-                "Buddy",
-                "Loser"
-            ],
-            answer: "Loser"
         }
     ],
-    Interstellar: [
+    interstellar: [
         {
             question: "Who directed Interstellar?",
             options: [
@@ -726,59 +526,9 @@ const allQuestions = {
                 "Brand"
             ],
             answer: "Cooper"
-        },
-        {
-            question: "What shape is the tesseract?",
-            options: [
-                "Cube",
-                "Sphere",
-                "4D Space",
-                "Triangle"
-            ],
-            answer: "4D Space"
-        },
-        {
-            question: "What is Plan B?",
-            options: [
-                "Destroy Earth",
-                "Repopulate new planet",
-                "Time travel",
-                "Clone humans"
-            ],
-            answer: "Repopulate new planet"
-        },
-        {
-            question: "What powers the Endurance spaceship?",
-            options: [
-                "Fuel",
-                "Solar",
-                "Fusion",
-                "Gravity"
-            ],
-            answer: "Gravity"
-        },
-        {
-            question: "Who finds the quantum data?",
-            options: [
-                "TARS",
-                "CASE",
-                "Murph",
-                "Cooper"
-            ],
-            answer: "TARS"
-        },
-        {
-            question: "How does Cooper communicate with Murph in the past?",
-            options: [
-                "Phone",
-                "Tesseract",
-                "Dreams",
-                "Video"
-            ],
-            answer: "Tesseract"
         }
     ],
-    Beast: [
+    beast: [
         {
             question: "Who plays the lead role in the movie Beast?",
             options: [
@@ -878,59 +628,9 @@ const allQuestions = {
                 "Gangsters"
             ],
             answer: "Terrorists"
-        },
-        {
-            question: "Which language was Beast originally released in?",
-            options: [
-                "Hindi",
-                "Tamil",
-                "Telugu",
-                "Kannada"
-            ],
-            answer: "Tamil"
-        },
-        {
-            question: "What is Veera’s mental state post-mission?",
-            options: [
-                "Calm",
-                "Depressed",
-                "Haunted",
-                "Normal"
-            ],
-            answer: "Haunted"
-        },
-        {
-            question: "What genre best describes Beast?",
-            options: [
-                "Romantic",
-                "Action Thriller",
-                "Horror",
-                "Sci-Fi"
-            ],
-            answer: "Action Thriller"
-        },
-        {
-            question: "What is the relationship between Veera and the government?",
-            options: [
-                "Employee",
-                "Enemy",
-                "Freelancer",
-                "Ex-agent"
-            ],
-            answer: "Ex-agent"
-        },
-        {
-            question: "What tactic does Veera use to defeat the terrorists?",
-            options: [
-                "Negotiation",
-                "Stealth",
-                "Force and strategy",
-                "Escape plan"
-            ],
-            answer: "Force and strategy"
         }
     ],
-    BlackWidow: [
+    blackwidow: [
         {
             question: "Who plays the character of Black Widow?",
             options: [
@@ -1030,56 +730,1536 @@ const allQuestions = {
                 "Winter Soldier"
             ],
             answer: "Red Guardian"
-        },
+        }
+    ],
+    twisters: [
         {
-            question: "What does Natasha give to Yelena at the end?",
+            question: "Who directed the movie Twister?",
             options: [
-                "Bracelet",
-                "Gas antidote",
-                "Her vest",
-                "USB drive"
+                "Jan de Bont",
+                "Steven Spielberg",
+                "Michael Bay",
+                "James Cameron"
             ],
-            answer: "Her vest"
+            answer: "Jan de Bont"
         },
         {
-            question: "Which Avenger is closest to Natasha?",
+            question: "What is the profession of the main characters in Twister?",
             options: [
-                "Iron Man",
-                "Captain America",
-                "Hawkeye",
-                "Thor"
+                "Storm chasers",
+                "Firefighters",
+                "Astronomers",
+                "Seismologists"
             ],
-            answer: "Hawkeye"
+            answer: "Storm chasers"
         },
         {
-            question: "Where is the Red Room located?",
+            question: "What is the name of the tornado-tracking device used in the movie?",
             options: [
-                "Russia",
-                "Underground",
-                "In the sky",
-                "Siberia"
+                "Dorothy",
+                "TornadoX",
+                "Zeus",
+                "Tempest"
             ],
-            answer: "In the sky"
+            answer: "Dorothy"
         },
         {
-            question: "What event connects the movie to Avengers: Endgame?",
+            question: "Which actress plays Dr. Jo Harding?",
             options: [
+                "Sandra Bullock",
+                "Helen Hunt",
+                "Julianne Moore",
+                "Nicole Kidman"
+            ],
+            answer: "Helen Hunt"
+        },
+        {
+            question: "Which actor plays the character Bill Harding?",
+            options: [
+                "Bill Paxton",
+                "Tom Hanks",
+                "Kevin Costner",
+                "Jeff Goldblum"
+            ],
+            answer: "Bill Paxton"
+        },
+        {
+            question: "What natural disaster is central to the movie Twister?",
+            options: [
+                "Earthquake",
+                "Hurricane",
+                "Tornado",
+                "Flood"
+            ],
+            answer: "Tornado"
+        },
+        {
+            question: "What category of tornado is featured in the climax of the movie?",
+            options: [
+                "F1",
+                "F3",
+                "F5",
+                "F2"
+            ],
+            answer: "F5"
+        },
+        {
+            question: "What is the relationship between Jo and Bill Harding?",
+            options: [
+                "Siblings",
+                "Strangers",
+                "Ex-spouses",
+                "Coworkers"
+            ],
+            answer: "Ex-spouses"
+        },
+        {
+            question: "What does the team hope to learn by deploying Dorothy?",
+            options: [
+                "Wind speed",
+                "Storm origin",
+                "Tornado behavior",
+                "Temperature"
+            ],
+            answer: "Tornado behavior"
+        },
+        {
+            question: "Which studio released Twister?",
+            options: [
+                "Warner Bros",
+                "20th Century Fox",
+                "Universal Pictures",
+                "Paramount"
+            ],
+            answer: "Universal Pictures"
+        }
+    ],
+    watcher: [
+        {
+            question: "Who plays the lead role of Julia in Watcher (2022)?",
+            options: [
+                "Maika Monroe",
+                "Florence Pugh",
+                "Anya Taylor-Joy",
+                "Emma Mackey"
+            ],
+            answer: "Maika Monroe"
+        },
+        {
+            question: "What city does Julia move to in Watcher?",
+            options: [
+                "Bucharest",
+                "Prague",
+                "Budapest",
+                "Warsaw"
+            ],
+            answer: "Bucharest"
+        },
+        {
+            question: "Why does Julia move to a foreign city?",
+            options: [
+                "To study",
+                "To escape her past",
+                "Her husband's job transfer",
+                "To care for her mother"
+            ],
+            answer: "Her husband's job transfer"
+        },
+        {
+            question: "What does Julia notice across from her apartment?",
+            options: [
+                "A blinking light",
+                "A man watching her",
+                "A broken window",
+                "A missing poster"
+            ],
+            answer: "A man watching her"
+        },
+        {
+            question: "What serial killer is suspected in the film?",
+            options: [
+                "The Watcher",
+                "Spider",
+                "The Shadow",
+                "Stalker"
+            ],
+            answer: "The Spider"
+        },
+        {
+            question: "What is Julia’s husband's profession?",
+            options: [
+                "Doctor",
+                "Banker",
+                "Marketing executive",
+                "Businessman"
+            ],
+            answer: "Marketing executive"
+        },
+        {
+            question: "How does Julia feel throughout the movie?",
+            options: [
+                "Happy and relaxed",
+                "Confused and suspicious",
+                "Watched and paranoid",
+                "Angry and aggressive"
+            ],
+            answer: "Watched and paranoid"
+        },
+        {
+            question: "What genre best describes Watcher?",
+            options: [
+                "Comedy",
+                "Horror",
+                "Romance",
+                "Psychological thriller"
+            ],
+            answer: "Psychological thriller"
+        },
+        {
+            question: "Who directed the movie Watcher?",
+            options: [
+                "Chloe Okuno",
+                "Robert Eggers",
+                "Ari Aster",
+                "David F. Sandberg"
+            ],
+            answer: "Chloe Okuno"
+        },
+        {
+            question: "What is the major theme of Watcher?",
+            options: [
+                "Friendship and loyalty",
+                "Trust vs. paranoia",
+                "Love and betrayal",
+                "Justice and revenge"
+            ],
+            answer: "Trust vs. paranoia"
+        }
+    ],
+    wanted: [
+        {
+            question: "Who plays the main character Wesley Gibson in Wanted?",
+            options: [
+                "James McAvoy",
+                "Shia LaBeouf",
+                "Jake Gyllenhaal",
+                "Daniel Radcliffe"
+            ],
+            answer: "James McAvoy"
+        },
+        {
+            question: "What organization recruits Wesley in Wanted?",
+            options: [
+                "The Assassins",
+                "The Brotherhood",
+                "The Fraternity",
+                "The Syndicate"
+            ],
+            answer: "The Fraternity"
+        },
+        {
+            question: "Which actress plays the character Fox?",
+            options: [
+                "Angelina Jolie",
+                "Scarlett Johansson",
+                "Charlize Theron",
+                "Megan Fox"
+            ],
+            answer: "Angelina Jolie"
+        },
+        {
+            question: "What unique ability does Wesley discover he has?",
+            options: [
+                "Invisibility",
+                "Bullet-curving",
                 "Time travel",
-                "Soul Stone",
-                "Natasha’s sacrifice",
-                "Snapping"
+                "X-ray vision"
             ],
-            answer: "Natasha’s sacrifice"
+            answer: "Bullet-curving"
         },
         {
-            question: "What is the main theme of Black Widow?",
+            question: "Who is revealed to be Wesley’s father?",
+            options: [
+                "Sloan",
+                "Cross",
+                "Mr. X",
+                "Pekwarsky"
+            ],
+            answer: "Cross"
+        },
+        {
+            question: "What is the name of the secret leader of The Fraternity?",
+            options: [
+                "Cross",
+                "Sloan",
+                "Fox",
+                "The Butcher"
+            ],
+            answer: "Sloan"
+        },
+        {
+            question: "Where are names of assassination targets found?",
+            options: [
+                "Crystal ball",
+                "Scrolls",
+                "Text messages",
+                "Loom of Fate"
+            ],
+            answer: "Loom of Fate"
+        },
+        {
+            question: "What happens to Fox at the end of the movie?",
+            options: [
+                "She escapes",
+                "She dies",
+                "She kills Sloan",
+                "She turns evil"
+            ],
+            answer: "She dies"
+        },
+        {
+            question: "What is Wesley’s job before he joins The Fraternity?",
+            options: [
+                "Waiter",
+                "Accountant",
+                "Office worker",
+                "Teacher"
+            ],
+            answer: "Office worker"
+        },
+        {
+            question: "Who directed Wanted (2008)?",
+            options: [
+                "Matthew Vaughn",
+                "Zack Snyder",
+                "Timur Bekmambetov",
+                "Christopher Nolan"
+            ],
+            answer: "Timur Bekmambetov"
+        }
+    ],
+    shutterisland: [
+        {
+            question: "Who plays the lead role of Teddy Daniels in Shutter Island?",
+            options: [
+                "Leonardo DiCaprio",
+                "Matt Damon",
+                "Jake Gyllenhaal",
+                "Brad Pitt"
+            ],
+            answer: "Leonardo DiCaprio"
+        },
+        {
+            question: "Who directed Shutter Island?",
+            options: [
+                "Martin Scorsese",
+                "Christopher Nolan",
+                "David Fincher",
+                "James Cameron"
+            ],
+            answer: "Martin Scorsese"
+        },
+        {
+            question: "Where is the story of Shutter Island set?",
+            options: [
+                "An island prison",
+                "A mental hospital on an island",
+                "A military base",
+                "A haunted mansion"
+            ],
+            answer: "A mental hospital on an island"
+        },
+        {
+            question: "What is the name of the mental facility on Shutter Island?",
+            options: [
+                "Ashecliffe",
+                "Arkham",
+                "Blackgate",
+                "Waverly Hills"
+            ],
+            answer: "Ashecliffe"
+        },
+        {
+            question: "What is Teddy Daniels' real identity revealed to be?",
+            options: [
+                "Andrew Laeddis",
+                "Chuck Aule",
+                "Edward Daniels",
+                "George Noyce"
+            ],
+            answer: "Andrew Laeddis"
+        },
+        {
+            question: "Who plays Chuck Aule, Teddy’s partner?",
+            options: [
+                "Mark Ruffalo",
+                "Joseph Gordon-Levitt",
+                "Ben Kingsley",
+                "Edward Norton"
+            ],
+            answer: "Mark Ruffalo"
+        },
+        {
+            question: "What is the anagram of 'Edward Daniels' and 'Rachel Solando'?",
+            options: [
+                "Andrew Laeddis and Dolores Chanal",
+                "George Noyce and Sarah Connors",
+                "Chuck Aule and Lisa Cavedo",
+                "No anagram"
+            ],
+            answer: "Andrew Laeddis and Dolores Chanal"
+        },
+        {
+            question: "Who is Dr. Cawley in the movie?",
+            options: [
+                "Head psychiatrist",
+                "Teddy’s partner",
+                "A patient",
+                "A detective"
+            ],
+            answer: "Head psychiatrist"
+        },
+        {
+            question: "What kind of experiment is hinted at being conducted on the island?",
+            options: [
+                "Mind control",
+                "Cloning",
+                "Telepathy",
+                "None"
+            ],
+            answer: "Mind control"
+        },
+        {
+            question: "What is the final line of the movie suggesting?",
+            options: [
+                "Teddy is cured",
+                "He chooses to die as a good man",
+                "He plans to escape",
+                "He doesn’t remember anything"
+            ],
+            answer: "He chooses to die as a good man"
+        }
+    ],
+    thegorge: [
+        {
+            question: "Who directed the movie The Gorge?",
+            options: [
+                "Scott Derrickson",
+                "Christopher Nolan",
+                "Sam Mendes",
+                "James Cameron"
+            ],
+            answer: "Scott Derrickson"
+        },
+        {
+            question: "Which actor plays the role of Levi in The Gorge?",
+            options: [
+                "Miles Teller",
+                "Jake Gyllenhaal",
+                "Chris Evans",
+                "Tom Hardy"
+            ],
+            answer: "Miles Teller"
+        },
+        {
+            question: "Who plays the character Drasa in The Gorge?",
+            options: [
+                "Anya Taylor-Joy",
+                "Florence Pugh",
+                "Emma Stone",
+                "Zendaya"
+            ],
+            answer: "Anya Taylor-Joy"
+        },
+        {
+            question: "Which streaming platform is The Gorge available on?",
+            options: [
+                "Apple TV+",
+                "Netflix",
+                "Amazon Prime",
+                "HBO Max"
+            ],
+            answer: "Apple TV+"
+        },
+        {
+            question: "What is the central setting of The Gorge?",
+            options: [
+                "A deep ravine guarded by snipers",
+                "A haunted mansion",
+                "A futuristic city",
+                "A post-apocalyptic desert"
+            ],
+            answer: "A deep ravine guarded by snipers"
+        },
+        {
+            question: "What is Levi’s role in the story?",
+            options: [
+                "Sniper guard",
+                "Spy agent",
+                "Detective",
+                "Scientist"
+            ],
+            answer: "Sniper guard"
+        },
+        {
+            question: "What do Levi and Drasa discover about each other?",
+            options: [
+                "They are assigned to kill each other",
+                "They were childhood friends",
+                "They are siblings",
+                "They are test subjects"
+            ],
+            answer: "They are assigned to kill each other"
+        },
+        {
+            question: "What genre best describes The Gorge?",
+            options: [
+                "Romantic action thriller",
+                "Historical drama",
+                "Comedy",
+                "Animated sci-fi"
+            ],
+            answer: "Romantic action thriller"
+        },
+        {
+            question: "Which code name is used for the final mission in The Gorge?",
+            options: [
+                "Stray Dog",
+                "Gorge Hammer",
+                "Echo Night",
+                "Blackout"
+            ],
+            answer: "Stray Dog"
+        },
+        {
+            question: "What decision do the two main characters make at the end?",
+            options: [
+                "To destroy the gorge",
+                "To escape together",
+                "To call for backup",
+                "To surrender"
+            ],
+            answer: "To destroy the gorge"
+        }
+    ],
+    clashofthetitans: [
+        {
+            question: "Who plays the role of Perseus in Clash of the Titans?",
+            options: [
+                "Sam Worthington",
+                "Chris Hemsworth",
+                "Henry Cavill",
+                "Tom Hiddleston"
+            ],
+            answer: "Sam Worthington"
+        },
+        {
+            question: "What is Perseus's relation to the gods in the movie?",
+            options: [
+                "Son of Zeus",
+                "Son of Hades",
+                "A mortal warrior",
+                "Brother of Ares"
+            ],
+            answer: "Son of Zeus"
+        },
+        {
+            question: "What monster must Perseus defeat to save Argos?",
+            options: [
+                "Minotaur",
+                "Hydra",
+                "Kraken",
+                "Cerberus"
+            ],
+            answer: "Kraken"
+        },
+        {
+            question: "What is the name of the winged horse Perseus rides?",
+            options: [
+                "Pegasus",
+                "Arion",
+                "Shadowfax",
+                "Bucephalus"
+            ],
+            answer: "Pegasus"
+        },
+        {
+            question: "Who is the goddess that helps Perseus during his quest?",
+            options: [
+                "Aphrodite",
+                "Athena",
+                "Io",
+                "Artemis"
+            ],
+            answer: "Io"
+        },
+        {
+            question: "Which actor plays Zeus in the movie?",
+            options: [
+                "Liam Neeson",
+                "Russell Crowe",
+                "Anthony Hopkins",
+                "Gerard Butler"
+            ],
+            answer: "Liam Neeson"
+        },
+        {
+            question: "What weapon does Perseus use to defeat the Kraken?",
+            options: [
+                "Zeus's lightning bolt",
+                "Sword of Olympus",
+                "Medusa's head",
+                "Golden spear"
+            ],
+            answer: "Medusa's head"
+        },
+        {
+            question: "What mythical creature does Perseus fight in Medusa’s lair?",
+            options: [
+                "Cyclops",
+                "Scorpions",
+                "Medusa",
+                "Harpies"
+            ],
+            answer: "Medusa"
+        },
+        {
+            question: "What punishment is given to Hades at the end?",
+            options: [
+                "Imprisoned in Tartarus",
+                "Banished to the underworld",
+                "Stripped of powers",
+                "Turned into stone"
+            ],
+            answer: "Banished to the underworld"
+        },
+        {
+            question: "Which Greek city is threatened by the Kraken?",
+            options: [
+                "Athens",
+                "Sparta",
+                "Argos",
+                "Delphi"
+            ],
+            answer: "Argos"
+        }
+    ],
+    rambo: [
+        {
+            question: "Who plays the role of John Rambo?",
+            options: [
+                "Arnold Schwarzenegger",
+                "Sylvester Stallone",
+                "Bruce Willis",
+                "Jean-Claude Van Damme"
+            ],
+            answer: "Sylvester Stallone"
+        },
+        {
+            question: "What is the title of the first Rambo movie?",
+            options: [
+                "Rambo",
+                "Rambo: First Blood Part II",
+                "First Blood",
+                "Rambo III"
+            ],
+            answer: "First Blood"
+        },
+        {
+            question: "What branch of the military did Rambo serve in?",
+            options: [
+                "Navy SEALs",
+                "Army Special Forces",
+                "Air Force",
+                "Marine Corps"
+            ],
+            answer: "Army Special Forces"
+        },
+        {
+            question: "What is Rambo's signature weapon?",
+            options: [
+                "Sniper Rifle",
+                "Crossbow",
+                "Combat Knife",
+                "AK-47"
+            ],
+            answer: "Combat Knife"
+        },
+        {
+            question: "Which war is Rambo a veteran of?",
+            options: [
+                "World War II",
+                "Vietnam War",
+                "Korean War",
+                "Gulf War"
+            ],
+            answer: "Vietnam War"
+        },
+        {
+            question: "Who is the sheriff that arrests Rambo in First Blood?",
+            options: [
+                "Teasle",
+                "Trautman",
+                "Baker",
+                "Murdock"
+            ],
+            answer: "Teasle"
+        },
+        {
+            question: "What is the name of Rambo’s former commanding officer?",
+            options: [
+                "Colonel Trautman",
+                "Captain Price",
+                "General Hammond",
+                "Major Burns"
+            ],
+            answer: "Colonel Trautman"
+        },
+        {
+            question: "Which Rambo film is set in Afghanistan?",
+            options: [
+                "Rambo",
+                "Rambo III",
+                "Rambo: First Blood Part II",
+                "Rambo: Last Blood"
+            ],
+            answer: "Rambo III"
+        },
+        {
+            question: "In which movie does Rambo rescue POWs in Vietnam?",
+            options: [
+                "First Blood",
+                "Rambo III",
+                "Rambo: First Blood Part II",
+                "Rambo: Last Blood"
+            ],
+            answer: "Rambo: First Blood Part II"
+        },
+        {
+            question: "What is the main theme of the Rambo series?",
             options: [
                 "Revenge",
-                "Family and freedom",
+                "Survival and war trauma",
                 "Romance",
-                "Power"
+                "Comedy"
             ],
-            answer: "Family and freedom"
+            answer: "Survival and war trauma"
+        }
+    ],
+    passengers: [
+        {
+            question: "Who plays the male lead Jim Preston in Passengers?",
+            options: [
+                "Chris Evans",
+                "Chris Pratt",
+                "Bradley Cooper",
+                "Liam Hemsworth"
+            ],
+            answer: "Chris Pratt"
+        },
+        {
+            question: "Who plays the female lead Aurora Lane?",
+            options: [
+                "Jennifer Lawrence",
+                "Emma Stone",
+                "Scarlett Johansson",
+                "Margot Robbie"
+            ],
+            answer: "Jennifer Lawrence"
+        },
+        {
+            question: "What is the name of the spaceship in Passengers?",
+            options: [
+                "Avalon",
+                "Endurance",
+                "Valiant",
+                "Odyssey"
+            ],
+            answer: "Avalon"
+        },
+        {
+            question: "How long is the journey supposed to take?",
+            options: [
+                "50 years",
+                "90 years",
+                "120 years",
+                "500 years"
+            ],
+            answer: "120 years"
+        },
+        {
+            question: "Why does Jim wake up early?",
+            options: [
+                "Accident/malfunction",
+                "Manual override",
+                "Explosion",
+                "Alien attack"
+            ],
+            answer: "Accident/malfunction"
+        },
+        {
+            question: "What is the purpose of the mission in Passengers?",
+            options: [
+                "Military transport",
+                "Time travel",
+                "Colonize a new planet",
+                "Evacuate Earth"
+            ],
+            answer: "Colonize a new planet"
+        },
+        {
+            question: "What is the name of the android bartender?",
+            options: [
+                "David",
+                "Walter",
+                "Arthur",
+                "Max"
+            ],
+            answer: "Arthur"
+        },
+        {
+            question: "Which system failure threatens the ship?",
+            options: [
+                "AI malfunction",
+                "Life Support",
+                "Fusion Reactor",
+                "Gravity Generator"
+            ],
+            answer: "Fusion Reactor"
+        },
+        {
+            question: "What choice does Aurora make at the end?",
+            options: [
+                "Go back to sleep",
+                "Leave the ship",
+                "Stay with Jim",
+                "Report the malfunction"
+            ],
+            answer: "Stay with Jim"
+        },
+        {
+            question: "What does the crew find when they wake up at the end?",
+            options: [
+                "A jungle-like atrium",
+                "An abandoned ship",
+                "Frozen passengers",
+                "A broken system"
+            ],
+            answer: "A jungle-like atrium"
+        }
+    ],
+    fountain: [
+        {
+            question: "Who directed The Fountain?",
+            options: [
+                "Darren Aronofsky",
+                "Christopher Nolan",
+                "James Cameron",
+                "David Fincher"
+            ],
+            answer: "Darren Aronofsky"
+        },
+        {
+            question: "Who plays the lead role of Tommy in The Fountain?",
+            options: [
+                "Hugh Jackman",
+                "Brad Pitt",
+                "Christian Bale",
+                "Jake Gyllenhaal"
+            ],
+            answer: "Hugh Jackman"
+        },
+        {
+            question: "Who plays Izzi, Tommy’s wife?",
+            options: [
+                "Rachel Weisz",
+                "Natalie Portman",
+                "Scarlett Johansson",
+                "Kate Winslet"
+            ],
+            answer: "Rachel Weisz"
+        },
+        {
+            question: "What tree is central to the story of The Fountain?",
+            options: [
+                "Tree of Life",
+                "Banyan Tree",
+                "Yggdrasil",
+                "Sacred Oak"
+            ],
+            answer: "Tree of Life"
+        },
+        {
+            question: "In how many time periods is the story of The Fountain set?",
+            options: [
+                "Two",
+                "One",
+                "Three",
+                "Four"
+            ],
+            answer: "Three"
+        },
+        {
+            question: "What theme does the movie primarily explore?",
+            options: [
+                "Immortality and love",
+                "Time travel",
+                "Revenge",
+                "Alien invasion"
+            ],
+            answer: "Immortality and love"
+        },
+        {
+            question: "Which historical figure does one version of Hugh Jackman’s character portray?",
+            options: [
+                "Spanish Conquistador",
+                "Roman Emperor",
+                "Egyptian Pharaoh",
+                "Greek Warrior"
+            ],
+            answer: "Spanish Conquistador"
+        },
+        {
+            question: "What object symbolizes hope and eternity in the film?",
+            options: [
+                "A ring",
+                "A star",
+                "A book",
+                "A tree"
+            ],
+            answer: "A tree"
+        },
+        {
+            question: "What star is the character seeking in space?",
+            options: [
+                "Xibalba",
+                "Altair",
+                "Vega",
+                "Sirius"
+            ],
+            answer: "Xibalba"
+        },
+        {
+            question: "Who composed the score for The Fountain?",
+            options: [
+                "Hans Zimmer",
+                "John Williams",
+                "Clint Mansell",
+                "Howard Shore"
+            ],
+            answer: "Clint Mansell"
+        }
+    ],
+    zodiac: [
+        {
+            question: "Who directed the movie Zodiac?",
+            options: [
+                "David Fincher",
+                "Christopher Nolan",
+                "Martin Scorsese",
+                "Steven Spielberg"
+            ],
+            answer: "David Fincher"
+        },
+        {
+            question: "Which actor plays Robert Graysmith in Zodiac?",
+            options: [
+                "Jake Gyllenhaal",
+                "Mark Ruffalo",
+                "Robert Downey Jr.",
+                "Edward Norton"
+            ],
+            answer: "Jake Gyllenhaal"
+        },
+        {
+            question: "Who is the Zodiac Killer primarily known for targeting?",
+            options: [
+                "Politicians",
+                "Police officers",
+                "Random citizens",
+                "Criminals"
+            ],
+            answer: "Random citizens"
+        },
+        {
+            question: "What profession does Robert Graysmith have?",
+            options: [
+                "Detective",
+                "Journalist",
+                "Cartoonist",
+                "Police Officer"
+            ],
+            answer: "Cartoonist"
+        },
+        {
+            question: "Which newspaper plays a key role in the investigation?",
+            options: [
+                "The Chronicle",
+                "The Times",
+                "San Francisco Chronicle",
+                "New York Post"
+            ],
+            answer: "San Francisco Chronicle"
+        },
+        {
+            question: "Which famous actor plays Paul Avery in the film?",
+            options: [
+                "Brad Pitt",
+                "Robert Downey Jr.",
+                "Tom Hanks",
+                "Leonardo DiCaprio"
+            ],
+            answer: "Robert Downey Jr."
+        },
+        {
+            question: "Which code is repeatedly sent by the Zodiac killer?",
+            options: [
+                "Morse code",
+                "Ciphers",
+                "Binary code",
+                "Barcodes"
+            ],
+            answer: "Ciphers"
+        },
+        {
+            question: "Which detective is portrayed by Mark Ruffalo?",
+            options: [
+                "David Toschi",
+                "Bill Armstrong",
+                "Harry Bosch",
+                "Jake Hoyt"
+            ],
+            answer: "David Toschi"
+        },
+        {
+            question: "What type of evidence was largely missing in the Zodiac case?",
+            options: [
+                "Witnesses",
+                "Physical DNA",
+                "Phone calls",
+                "Photographs"
+            ],
+            answer: "Physical DNA"
+        },
+        {
+            question: "What genre best describes Zodiac?",
+            options: [
+                "Science fiction",
+                "Romantic comedy",
+                "Crime thriller",
+                "Fantasy"
+            ],
+            answer: "Crime thriller"
+        }
+    ],
+    lover: [
+        {
+            question: "Who plays the lead role in the Punjabi movie Lover?",
+            options: [
+                "Gurnam Bhullar",
+                "Guri",
+                "Parmish Verma",
+                "Ammy Virk"
+            ],
+            answer: "Guri"
+        },
+        {
+            question: "What is the name of Guri's character in Lover?",
+            options: [
+                "Laali",
+                "Kaka",
+                "Ranjha",
+                "Jaggi"
+            ],
+            answer: "Laali"
+        },
+        {
+            question: "Who is the female lead in the movie Lover?",
+            options: [
+                "Tania",
+                "Neeru Bajwa",
+                "Ronak Joshi",
+                "Sonam Bajwa"
+            ],
+            answer: "Ronak Joshi"
+        },
+        {
+            question: "What is the genre of the movie Lover?",
+            options: [
+                "Comedy",
+                "Romantic drama",
+                "Action",
+                "Horror"
+            ],
+            answer: "Romantic drama"
+        },
+        {
+            question: "Which medical issue does Laali struggle with in Lover?",
+            options: [
+                "Cancer",
+                "Heart disease",
+                "Mental health",
+                "Drug addiction"
+            ],
+            answer: "Mental health"
+        },
+        {
+            question: "What is the main theme of Lover?",
+            options: [
+                "Revenge",
+                "Friendship",
+                "Tragic love",
+                "Patriotism"
+            ],
+            answer: "Tragic love"
+        },
+        {
+            question: "Which city is prominently shown in Lover?",
+            options: [
+                "Chandigarh",
+                "Amritsar",
+                "Patiala",
+                "Ludhiana"
+            ],
+            answer: "Amritsar"
+        },
+        {
+            question: "What is the occupation of Laali’s love interest?",
+            options: [
+                "Singer",
+                "Student",
+                "Doctor",
+                "Police Officer"
+            ],
+            answer: "Doctor"
+        },
+        {
+            question: "What does Laali often express through?",
+            options: [
+                "Letters",
+                "Poems",
+                "Songs",
+                "Drawings"
+            ],
+            answer: "Songs"
+        },
+        {
+            question: "How is the ending of Lover described?",
+            options: [
+                "Happy",
+                "Unresolved",
+                "Tragic",
+                "Open-ended"
+            ],
+            answer: "Tragic"
+        }
+    ],
+    qismat: [
+        {
+            question: "Who plays the male lead in the Punjabi movie Qismat?",
+            options: [
+                "Ammy Virk",
+                "Parmish Verma",
+                "Gurnam Bhullar",
+                "Diljit Dosanjh"
+            ],
+            answer: "Ammy Virk"
+        },
+        {
+            question: "Who is the female lead in Qismat?",
+            options: [
+                "Sargun Mehta",
+                "Sonam Bajwa",
+                "Neeru Bajwa",
+                "Tania"
+            ],
+            answer: "Sargun Mehta"
+        },
+        {
+            question: "What genre best describes Qismat?",
+            options: [
+                "Romantic drama",
+                "Comedy",
+                "Action thriller",
+                "Musical"
+            ],
+            answer: "Romantic drama"
+        },
+        {
+            question: "What is the name of Ammy Virk’s character in Qismat?",
+            options: [
+                "Shiv",
+                "Raj",
+                "Laadi",
+                "Jagga"
+            ],
+            answer: "Shiv"
+        },
+        {
+            question: "Who directed Qismat?",
+            options: [
+                "Jagdeep Sidhu",
+                "Amrinder Gill",
+                "Smeep Kang",
+                "Pankaj Batra"
+            ],
+            answer: "Jagdeep Sidhu"
+        },
+        {
+            question: "What is the emotional climax of Qismat?",
+            options: [
+                "Reunion",
+                "Marriage",
+                "Separation due to illness",
+                "Fight"
+            ],
+            answer: "Separation due to illness"
+        },
+        {
+            question: "What is the profession of Sargun Mehta’s character?",
+            options: [
+                "Doctor",
+                "Student",
+                "Teacher",
+                "Journalist"
+            ],
+            answer: "Student"
+        },
+        {
+            question: "Which song from Qismat became a chartbuster?",
+            options: [
+                "Kaun Hoyega",
+                "Qismat",
+                "Pasand Jatt Di",
+                "Sooraj"
+            ],
+            answer: "Kaun Hoyega"
+        },
+        {
+            question: "What city is mostly shown in Qismat?",
+            options: [
+                "Chandigarh",
+                "Ludhiana",
+                "Amritsar",
+                "Patiala"
+            ],
+            answer: "Chandigarh"
+        },
+        {
+            question: "How would you describe the ending of Qismat?",
+            options: [
+                "Happy",
+                "Tragic",
+                "Open-ended",
+                "Comic"
+            ],
+            answer: "Tragic"
+        }
+    ],
+    raazi: [
+        {
+            question: "Who plays the lead role in Raazi?",
+            options: [
+                "Alia Bhatt",
+                "Kangana Ranaut",
+                "Deepika Padukone",
+                "Taapsee Pannu"
+            ],
+            answer: "Alia Bhatt"
+        },
+        {
+            question: "What is the name of Alia Bhatt’s character in Raazi?",
+            options: [
+                "Sehmat",
+                "Zoya",
+                "Ananya",
+                "Ishita"
+            ],
+            answer: "Sehmat"
+        },
+        {
+            question: "Raazi is based on which real-life event?",
+            options: [
+                "Indo-Pak war of 1971",
+                "Kargil War",
+                "Uri Attack",
+                "Mumbai Attacks"
+            ],
+            answer: "Indo-Pak war of 1971"
+        },
+        {
+            question: "What is Sehmat’s profession in the movie?",
+            options: [
+                "Spy",
+                "Teacher",
+                "Journalist",
+                "Doctor"
+            ],
+            answer: "Spy"
+        },
+        {
+            question: "Who directed the film Raazi?",
+            options: [
+                "Meghna Gulzar",
+                "Shoojit Sircar",
+                "Anurag Kashyap",
+                "Zoya Akhtar"
+            ],
+            answer: "Meghna Gulzar"
+        },
+        {
+            question: "Which book is Raazi based on?",
+            options: [
+                "Calling Sehmat",
+                "Spy in Love",
+                "Undercover India",
+                "Mission Raazi"
+            ],
+            answer: "Calling Sehmat"
+        },
+        {
+            question: "Who plays Sehmat’s husband in the film?",
+            options: [
+                "Vicky Kaushal",
+                "Rajkummar Rao",
+                "Sidharth Malhotra",
+                "Ranbir Kapoor"
+            ],
+            answer: "Vicky Kaushal"
+        },
+        {
+            question: "Which agency does Sehmat work for?",
+            options: [
+                "RAW",
+                "CBI",
+                "IB",
+                "NIA"
+            ],
+            answer: "RAW"
+        },
+        {
+            question: "In which country is most of the movie set?",
+            options: [
+                "Pakistan",
+                "India",
+                "Bangladesh",
+                "Afghanistan"
+            ],
+            answer: "Pakistan"
+        },
+        {
+            question: "What is the central theme of Raazi?",
+            options: [
+                "Patriotism and sacrifice",
+                "Love story",
+                "Comedy of errors",
+                "Musical drama"
+            ],
+            answer: "Patriotism and sacrifice"
+        }
+    ],
+    bhaagmilkhabhaag: [
+        {
+            question: "Who played the role of Milkha Singh in Bhaag Milkha Bhaag?",
+            options: [
+                "Farhan Akhtar",
+                "John Abraham",
+                "Hrithik Roshan",
+                "Shahid Kapoor"
+            ],
+            answer: "Farhan Akhtar"
+        },
+        {
+            question: "Who directed Bhaag Milkha Bhaag?",
+            options: [
+                "Rakeysh Omprakash Mehra",
+                "Kabir Khan",
+                "Ashutosh Gowariker",
+                "Anurag Kashyap"
+            ],
+            answer: "Rakeysh Omprakash Mehra"
+        },
+        {
+            question: "Bhaag Milkha Bhaag is based on the life of which Indian athlete?",
+            options: [
+                "Milkha Singh",
+                "P.T. Usha",
+                "Abhinav Bindra",
+                "Neeraj Chopra"
+            ],
+            answer: "Milkha Singh"
+        },
+        {
+            question: "What event caused Milkha to flee from his village as a child?",
+            options: [
+                "Partition riots",
+                "Famine",
+                "Flood",
+                "Train accident"
+            ],
+            answer: "Partition riots"
+        },
+        {
+            question: "Which actress plays the role of Milkha Singh’s love interest?",
+            options: [
+                "Sonam Kapoor",
+                "Priyanka Chopra",
+                "Deepika Padukone",
+                "Anushka Sharma"
+            ],
+            answer: "Sonam Kapoor"
+        },
+        {
+            question: "In which Olympics did Milkha Singh narrowly miss a medal?",
+            options: [
+                "1960 Rome Olympics",
+                "1956 Melbourne Olympics",
+                "1964 Tokyo Olympics",
+                "1980 Moscow Olympics"
+            ],
+            answer: "1960 Rome Olympics"
+        },
+        {
+            question: "What nickname was given to Milkha Singh?",
+            options: [
+                "The Flying Sikh",
+                "Lightning Bolt",
+                "Iron Man",
+                "Speed King"
+            ],
+            answer: "The Flying Sikh"
+        },
+        {
+            question: "Who composed the music for Bhaag Milkha Bhaag?",
+            options: [
+                "Shankar-Ehsaan-Loy",
+                "A.R. Rahman",
+                "Amit Trivedi",
+                "Vishal-Shekhar"
+            ],
+            answer: "Shankar-Ehsaan-Loy"
+        },
+        {
+            question: "What was the profession of Milkha Singh in the Indian Army?",
+            options: [
+                "Jawan",
+                "Subedar",
+                "Clerk",
+                "Officer Cadet"
+            ],
+            answer: "Jawan"
+        },
+        {
+            question: "Which sport is central to Bhaag Milkha Bhaag?",
+            options: [
+                "Running",
+                "Wrestling",
+                "Cricket",
+                "Boxing"
+            ],
+            answer: "Running"
+        }
+    ],
+    "3idiots": [
+        {
+            question: "Who plays the role of Rancho in 3 Idiots?",
+            options: [
+                "Aamir Khan",
+                "R. Madhavan",
+                "Sharman Joshi",
+                "Boman Irani"
+            ],
+            answer: "Aamir Khan"
+        },
+        {
+            question: "What is the real name of Rancho in the movie?",
+            options: [
+                "Ranchoddas Shamaldas Chanchad",
+                "Phunsukh Wangdu",
+                "Raju Rastogi",
+                "Farhan Qureshi"
+            ],
+            answer: "Phunsukh Wangdu"
+        },
+        {
+            question: "Who is the strict college principal in the film?",
+            options: [
+                "Virus",
+                "Dr. Asthana",
+                "Professor Dumbledore",
+                "Dean Sahni"
+            ],
+            answer: "Virus"
+        },
+        {
+            question: "What is the full form of 'AAL IZZ WELL' according to the movie?",
+            options: [
+                "All is well",
+                "Aim and Learn",
+                "Always Inspire",
+                "None of these"
+            ],
+            answer: "All is well"
+        },
+        {
+            question: "Which engineering college is the movie based on?",
+            options: [
+                "IIT Delhi",
+                "Imperial College of Engineering (ICE)",
+                "NIT Trichy",
+                "BITS Pilani"
+            ],
+            answer: "Imperial College of Engineering (ICE)"
+        },
+        {
+            question: "What is Farhan Qureshi's passion?",
+            options: [
+                "Photography",
+                "Writing",
+                "Cricket",
+                "Coding"
+            ],
+            answer: "Photography"
+        },
+        {
+            question: "What does Raju Rastogi believe brings bad luck?",
+            options: [
+                "Left leg first",
+                "Black cat",
+                "Friday 13th",
+                "Whistling indoors"
+            ],
+            answer: "Left leg first"
+        },
+        {
+            question: "What subject does Virus teach?",
+            options: [
+                "Thermodynamics",
+                "Machine Design",
+                "Engineering Drawing",
+                "Physics"
+            ],
+            answer: "Machine Design"
+        },
+        {
+            question: "Who is Pia in the movie?",
+            options: [
+                "Rancho’s friend",
+                "Raju's sister",
+                "Virus's daughter",
+                "Farhan’s cousin"
+            ],
+            answer: "Virus's daughter"
+        },
+        {
+            question: "What is the climax twist about Rancho's identity?",
+            options: [
+                "He was a school dropout",
+                "He was actually a teacher",
+                "He was Phunsukh Wangdu",
+                "He never existed"
+            ],
+            answer: "He was Phunsukh Wangdu"
         }
     ]
 };
@@ -1088,36 +2268,38 @@ function QuestionsPage() {
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const movieParam = searchParams.get('movie')?.toLowerCase();
-    const numQuestions = Number(searchParams.get('numQuestions')) || 10;
+    const numParam = Number(searchParams.get('numQuestions')) || 10;
+    const numQuestions = Math.min(numParam, 10); // 🔒 Clamp to max 10 questions
     const movieQuestions = allQuestions[movieParam] || [];
+    const limitedQuestions = movieQuestions.slice(0, numQuestions);
     const [currentQuestionIndex, setCurrentQuestionIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [score, setScore] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const currentQuestion = movieQuestions[currentQuestionIndex];
+    const currentQuestion = limitedQuestions[currentQuestionIndex];
     const handleAnswer = (selectedOption)=>{
         const isCorrect = selectedOption === currentQuestion.answer;
         if (isCorrect) {
             setScore(score + 1);
         }
-        if (currentQuestionIndex + 1 < numQuestions && currentQuestionIndex + 1 < movieQuestions.length) {
+        if (currentQuestionIndex + 1 < limitedQuestions.length) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
-            router.push(`/score?score=${score + (isCorrect ? 1 : 0)}&total=${numQuestions}`);
+            router.push(`/score?score=${score + (isCorrect ? 1 : 0)}&total=${limitedQuestions.length}`);
         }
     };
     if (!movieQuestions.length) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "questions-container",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                children: "No questions found for this movie."
+                children: "❌ No questions found for this movie. Please try a different one."
             }, void 0, false, {
                 fileName: "[project]/src/app/questions/page.jsx",
-                lineNumber: 577,
-                columnNumber: 49
+                lineNumber: 1186,
+                columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/questions/page.jsx",
-            lineNumber: 577,
-            columnNumber: 12
+            lineNumber: 1185,
+            columnNumber: 7
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,14 +2308,14 @@ function QuestionsPage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "progress",
                 children: [
-                    "Question ",
+                    "📍 Question ",
                     currentQuestionIndex + 1,
                     " of ",
-                    numQuestions
+                    limitedQuestions.length
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/questions/page.jsx",
-                lineNumber: 582,
+                lineNumber: 1193,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1143,7 +2325,7 @@ function QuestionsPage() {
                         children: currentQuestion.question
                     }, void 0, false, {
                         fileName: "[project]/src/app/questions/page.jsx",
-                        lineNumber: 584,
+                        lineNumber: 1195,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1153,24 +2335,24 @@ function QuestionsPage() {
                                 children: option
                             }, index, false, {
                                 fileName: "[project]/src/app/questions/page.jsx",
-                                lineNumber: 587,
+                                lineNumber: 1198,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/questions/page.jsx",
-                        lineNumber: 585,
+                        lineNumber: 1196,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/questions/page.jsx",
-                lineNumber: 583,
+                lineNumber: 1194,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/questions/page.jsx",
-        lineNumber: 581,
+        lineNumber: 1192,
         columnNumber: 5
     }, this);
 }

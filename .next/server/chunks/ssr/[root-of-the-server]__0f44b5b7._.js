@@ -59,7 +59,7 @@ function ScorePage() {
             className: "score-container",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    children: "Your Quiz Result"
+                    children: "🎉 Quiz Completed!"
                 }, void 0, false, {
                     fileName: "[project]/src/app/score/page.jsx",
                     lineNumber: 16,
@@ -70,13 +70,14 @@ function ScorePage() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "score",
                         children: [
+                            "🎯 ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "highlight",
                                 children: score
                             }, void 0, false, {
                                 fileName: "[project]/src/app/score/page.jsx",
                                 lineNumber: 20,
-                                columnNumber: 13
+                                columnNumber: 16
                             }, this),
                             " / ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -85,7 +86,7 @@ function ScorePage() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/score/page.jsx",
                                 lineNumber: 20,
-                                columnNumber: 58
+                                columnNumber: 61
                             }, this)
                         ]
                     }, void 0, true, {
@@ -100,7 +101,7 @@ function ScorePage() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "message",
-                    children: score === total ? "Perfect Score! You're a true fan!" : score > total / 2 ? "Great job! You know your stuff!" : "Keep watching movies and listening to music, you'll get better!"
+                    children: score === total ? "🏆 Perfect Score! You're a true movie buff!" : score > total / 2 ? "🔥 Great job! You know your stuff!" : "📺 Keep binge-watching & you'll improve!"
                 }, void 0, false, {
                     fileName: "[project]/src/app/score/page.jsx",
                     lineNumber: 24,
@@ -109,45 +110,34 @@ function ScorePage() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "score-breakdown",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: [
-                                "Incorrect: ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "highlight",
-                                    children: incorrect
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/score/page.jsx",
-                                    lineNumber: 33,
-                                    columnNumber: 25
-                                }, this),
-                                " (",
-                                Math.round(incorrectPercentage),
-                                "%)"
-                            ]
-                        }, void 0, true, {
+                        "❌ Incorrect: ",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "highlight",
+                            children: incorrect
+                        }, void 0, false, {
                             fileName: "[project]/src/app/score/page.jsx",
                             lineNumber: 33,
-                            columnNumber: 11
+                            columnNumber: 24
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        " (",
+                        Math.round(incorrectPercentage),
+                        "%)",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/src/app/score/page.jsx",
+                            lineNumber: 33,
+                            columnNumber: 107
+                        }, this),
+                        "✅ Score Percentage: ",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "highlight",
                             children: [
-                                "Score Percentage: ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "highlight",
-                                    children: [
-                                        Math.round(scorePercentage),
-                                        "%"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/score/page.jsx",
-                                    lineNumber: 34,
-                                    columnNumber: 32
-                                }, this)
+                                Math.round(scorePercentage),
+                                "%"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/score/page.jsx",
                             lineNumber: 34,
-                            columnNumber: 11
+                            columnNumber: 31
                         }, this)
                     ]
                 }, void 0, true, {
@@ -158,7 +148,7 @@ function ScorePage() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                     href: "/home",
                     className: "home-button",
-                    children: "Go Back to Home"
+                    children: "🔙 Go Back to Home"
                 }, void 0, false, {
                     fileName: "[project]/src/app/score/page.jsx",
                     lineNumber: 37,

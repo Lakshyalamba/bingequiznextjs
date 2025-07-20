@@ -1,13 +1,14 @@
-/* Background and Layout */
+/* Main Container */
 .home-container {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url('/background.avif') no-repeat center center/cover;
-  color: white;
   font-family: 'Segoe UI', sans-serif;
-  padding: 2rem;
-  overflow-y: auto;
+  color: white;
   position: relative;
-  z-index: 0;
+  overflow: hidden;
 }
 
 .home-container::before {
@@ -17,144 +18,175 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
 }
 
-/* Back Link */
+/* Back Button */
 .back-button {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  font-size: 0.9rem;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  z-index: 1;
-  font-weight: bold;
-  transition: color 0.2s;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  z-index: 2;
 }
 
 .back-button:hover {
-  color: #ff4757;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Quiz Container Box */
-.quiz-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: rgba(31, 42, 64, 0.9);
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-  text-align: center;
-  z-index: 1;
-}
-
-.quiz-container h1 {
-  font-size: 2.8rem;
-  margin-bottom: 2rem;
-  color: #ff6b81;
+/* Logout Button */
+.logout-button {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  padding: 0.6rem 1rem;
+  background-color: #ff4757;
+  color: white;
+  border-radius: 8px;
+  border: none;
   font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 2;
+  box-shadow: 0 0 12px rgba(255, 71, 87, 0.4);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Section Headings */
-.movie-section h3 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.logout-button:hover {
+  background-color: #ff6b81;
+  transform: scale(1.05);
+}
+
+/* Quiz Container */
+.quiz-container {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(31, 42, 64, 0.92);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+/* Title */
+.quiz-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
   color: #ff6b81;
-  border-bottom: 2px solid #ff6b81;
-  display: inline-block;
-  padding-bottom: 4px;
 }
 
-.movie-section {
-  padding-bottom: 2rem;
+/* Quote */
+.quote {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  font-style: italic;
 }
 
-/* Movie Posters Grid */
+/* Movie Posters */
 .movie-posters {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
 }
 
-/* Movie Poster Cards */
 .movie-posters img {
-  width: 130px;
-  height: 190px;
+  width: 70px;
+  height: 100px;
+  border-radius: 6px;
   object-fit: cover;
   cursor: pointer;
-  border-radius: 10px;
   border: 2px solid transparent;
   transition: transform 0.3s, border-color 0.3s;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .movie-posters img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   border-color: #ff6b81;
 }
 
 .movie-posters .selected {
   border-color: #ff4757;
-  box-shadow: 0 0 12px rgba(255, 107, 129, 0.7);
+  box-shadow: 0 0 10px rgba(255, 107, 129, 0.6);
+}
+
+/* Headings */
+.quiz-container h3 {
+  font-size: 1.05rem;
+  color: #ffb3c1;
+  margin: 0.3rem 0;
+  font-weight: 600;
+  border-bottom: 1px solid #ff6b81;
+  display: inline-block;
+  padding-bottom: 2px;
 }
 
 /* Quiz Options */
 .quiz-options {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 .quiz-option {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .quiz-option label {
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
 }
 
 .quiz-option input,
 .quiz-option select {
-  padding: 0.8rem;
-  border-radius: 8px;
+  padding: 0.4rem;
+  width: 110px;
+  font-size: 0.9rem;
+  border-radius: 6px;
   border: none;
-  font-size: 1.1rem;
-  width: 200px;
-}
-
-.quiz-option input {
   background-color: #2f3a53;
   color: white;
-}
-
-.quiz-option select {
-  background-color: #2f3a53;
-  color: white;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
 .quiz-option input:focus,
 .quiz-option select:focus {
-  outline: none;
   background-color: #3a4a66;
+  outline: none;
 }
 
-/* Start Quiz Button */
+/* Start Button */
 .start-quiz-btn {
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
   background-color: #ff4757;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
 }
 
 .start-quiz-btn:hover {

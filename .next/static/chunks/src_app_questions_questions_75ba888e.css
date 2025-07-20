@@ -1,22 +1,23 @@
 /* [project]/src/app/questions/questions.css [app-client] (css) */
 .questions-container {
   text-align: center;
-  background-blend-mode: overlay;
   color: #fff;
-  background: #0009 url("/background.avif") center / cover no-repeat;
-  flex-grow: 1;
+  z-index: 0;
+  background: url("/background.avif") center / cover no-repeat;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 6rem 2rem 4rem;
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
   position: relative;
 }
 
 .questions-container:before {
   content: "";
   z-index: -1;
-  background: #00000080;
+  background: #000000a6;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -24,32 +25,52 @@
   left: 0;
 }
 
+.back-button {
+  color: #fff;
+  z-index: 1;
+  background-color: #ffffff1a;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button:hover {
+  background-color: #ffffff40;
+}
+
 .question-card {
-  background: #292929e6;
-  border-radius: 12px;
+  background: linear-gradient(145deg, #292929, #1f1f1f);
+  border-radius: 16px;
   width: 90%;
   max-width: 600px;
   margin: 2rem auto;
   padding: 2.5rem;
   transition: transform .3s ease-in-out;
-  box-shadow: 0 0 20px #0009;
+  position: relative;
+  box-shadow: 0 0 25px #000000b3;
 }
 
 .question-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .question-card h3 {
   color: #ff6b81;
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .options {
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   display: flex;
 }
 
@@ -58,12 +79,16 @@
   cursor: pointer;
   background: #ff4757;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  align-items: center;
+  gap: .6rem;
   width: 100%;
   max-width: 350px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.4rem;
   font-size: 1.1rem;
   transition: background .3s, transform .3s;
+  display: flex;
+  box-shadow: 0 0 12px #ff475766;
 }
 
 .options button:hover {
@@ -76,33 +101,27 @@
   transform: scale(1);
 }
 
-p {
-  color: #ddd;
-  margin-top: 2rem;
-  font-size: 1rem;
-}
-
-.progress {
-  color: #ff6b81;
-  margin-top: 2rem;
+.options button:before {
+  content: "🎬";
   font-size: 1.2rem;
 }
 
-.back-button {
-  color: #fff;
-  background-color: #ffffff1a;
-  border-radius: 6px;
-  padding: 6px 12px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color .2s;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.progress {
+  color: #ffc107;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-.back-button:hover {
-  background-color: #fff3;
+.progress:before {
+  content: "📊 ";
+}
+
+p {
+  color: #eee;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 
