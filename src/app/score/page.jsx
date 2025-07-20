@@ -1,11 +1,17 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import './score.css';
 
-export default function ScorePage() {
+// Tell Next.js this is a dynamic page
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+
+// Component that uses searchParams
+function ScoreContent() {
   const searchParams = useSearchParams();
-  const score = parseInt(searchParams.get('score'));
-  const total = parseInt(searchParams.get('total'));
+  const score = parseInt(searchParams?.get('score') || 0);
+  const total = parseInt(searchParams?.get('total') || 10);
   const incorrect = total - score;
   const scorePercentage = (score / total) * 100;
   const incorrectPercentage = (incorrect / total) * 100;
@@ -37,5 +43,25 @@ export default function ScorePage() {
         <a href="/home" className="home-button">🔙 Go Back to Home</a>
       </div>
     </div>
+  );
+}
+
+// Loading fallback component
+function ScoreLoading() {
+  return (
+    <div className="score-page">
+      <div className="score-container">
+        <h1>Loading score...</h1>
+      </div>
+    </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function ScorePage() {
+  return (
+    <Suspense fallback={<ScoreLoading />}>
+      <ScoreContent />
+    </Suspense>
   );
 }

@@ -39,7 +39,7 @@ export default function HomePage() {
       {/* Main Quiz Section */}
       <div className="quiz-container">
         <h1>🎬 Welcome to Your Movie Quiz Dashboard!</h1>
-        <p className="quote">✨ *“Why so serious?” Dive into fun trivia and test your movie brain!* 🎥</p>
+        <p className="quote">✨ *"Why so serious?" Dive into fun trivia and test your movie brain!* 🎥</p>
 
         <div className="movie-section">
           <h3>💥 Action Blockbusters</h3>
@@ -119,7 +119,7 @@ export default function HomePage() {
         </div>
 
         <button onClick={handleStartQuiz} className="start-quiz-btn">
-          🚀 Let’s Begin!
+          🚀 Let's Begin!
         </button>
       </div>
     </div>

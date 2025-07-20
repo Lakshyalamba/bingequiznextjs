@@ -25,7 +25,7 @@
 }
 
 /* Back Button */
-.back-button {
+.back-button, .home-button {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -40,8 +40,21 @@
   z-index: 1;
 }
 
-.back-button:hover {
+.back-button:hover, .home-button:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.home-button {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ff4757;
+}
+
+.home-button:hover {
+  background-color: #ff1c1c;
 }
 
 /* Question Card */
