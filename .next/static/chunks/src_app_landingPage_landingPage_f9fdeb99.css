@@ -120,5 +120,11 @@ body {
   box-shadow: 0 6px 20px #ff6b814d;
 }
 
+@media (width <= 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+}
+
 
 /*# sourceMappingURL=src_app_landingPage_landingPage_f9fdeb99.css.map*/

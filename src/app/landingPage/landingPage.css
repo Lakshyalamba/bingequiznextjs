@@ -122,3 +122,9 @@ body {
   transform: scale(1.07);
   box-shadow: 0 6px 20px rgba(255, 107, 129, 0.3);
 }
+
+@media (max-width:480px){
+  .navbar{
+    padding:1rem 1rem;
+  }
+}
