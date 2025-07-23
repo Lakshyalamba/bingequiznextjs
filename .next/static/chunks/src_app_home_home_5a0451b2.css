@@ -196,6 +196,7 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
+    margin: 2rem 0;
     padding: 1rem;
   }
 
@@ -229,6 +230,10 @@
 @media (width <= 480px) {
   .home-container {
     padding: 1rem .5rem;
+  }
+
+  .quiz-container {
+    margin: 3rem 0;
   }
 
   .quiz-container h1 {
