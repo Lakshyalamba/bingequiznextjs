@@ -18,7 +18,7 @@ export default function HomePage() {
       alert("🍿 Please select a movie first!");
       return;
     }
-    router.push(`/questions?movie=${encodeURIComponent(selectedMovie)}&numQuestions=${numQuestions}&difficulty=${difficulty}`);
+    router.push(`/questions?movie=${selectedMovie}&numQuestions=${numQuestions}&difficulty=${difficulty}`);
   };
 
   const handleLogout = async () => {
