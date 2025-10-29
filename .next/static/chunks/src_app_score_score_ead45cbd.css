@@ -1,93 +1,299 @@
 /* [project]/src/app/score/score.css [app-client] (css) */
 .score-page {
-  background-blend-mode: overlay;
   color: #fff;
-  text-align: center;
-  background: #000000b3 url("/background.avif") center / cover no-repeat fixed;
+  background: url("/background.avif") center / cover no-repeat;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 6rem 2rem;
-  font-family: Segoe UI, sans-serif;
+  padding: 2rem;
+  font-family: Inter, Segoe UI, sans-serif;
   display: flex;
+  position: relative;
+}
+
+.score-page:before {
+  content: "";
+  z-index: 0;
+  background: #000000d9;
+  position: absolute;
+  inset: 0;
 }
 
 .score-container {
-  backdrop-filter: blur(8px);
-  background: linear-gradient(135deg, #fffc, #f8f8f8dd);
-  border-radius: 18px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  z-index: 1;
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 3rem;
-  animation: .6s ease-in-out pop-in;
-  box-shadow: 0 10px 30px #ff6b8166;
+  position: relative;
+  box-shadow: 0 20px 40px #0000004d;
 }
 
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-    transform: scale(.95);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.score-header {
+  margin-bottom: 2rem;
 }
 
-.score-container h1 {
-  color: #e84393;
-  text-shadow: 1px 1px 4px #000;
-  margin-bottom: 1.8rem;
-  font-size: 2.8rem;
+.score-header h1 {
+  color: #fff;
+  text-shadow: 0 0 20px #ff475780;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-.score-details .score {
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
-  font-size: 2.4rem;
+.score-subtitle {
+  color: #fffc;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.score-display {
+  background: linear-gradient(135deg, #ff475733, #ff6b811a);
+  border: 1px solid #ff47574d;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.score-main {
+  color: #ff4757;
+  margin-bottom: 1rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
-.highlight {
-  color: #ff4757;
-  font-weight: bold;
+.score-percentage {
+  color: #ffffffe6;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-.message {
-  color: #2f2f2f;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.score-message {
+  color: #fffc;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
-.score-breakdown {
-  color: #444;
+.stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
   margin-bottom: 2rem;
+  display: grid;
+}
+
+.stat-item {
+  text-align: center;
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.stat-number {
+  color: #ff4757;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+
+.stat-label {
+  color: #ffffffb3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .9rem;
+}
+
+.review-section {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.review-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.review-title {
+  color: #ff4757;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.toggle-review {
+  color: #ff4757;
+  cursor: pointer;
+  background: #ff47571a;
+  border: 1px solid #ff47574d;
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  transition: all .3s;
+}
+
+.toggle-review:hover {
+  background: #ff475733;
+}
+
+.questions-review {
+  max-height: 400px;
+  padding-right: 1rem;
+  overflow-y: auto;
+}
+
+.question-item {
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.question-item.correct {
+  background: #2ecc711a;
+  border-color: #2ecc7180;
+}
+
+.question-item.incorrect {
+  background: #e74c3c1a;
+  border-color: #e74c3c80;
+}
+
+.question-text {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.answer-comparison {
+  gap: .5rem;
+  display: grid;
+}
+
+.answer-row {
+  align-items: center;
+  gap: .5rem;
+  font-size: .9rem;
+  display: flex;
+}
+
+.answer-icon {
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.correct-answer .answer-icon, .your-answer.correct .answer-icon {
+  color: #fff;
+  background: #2ecc71;
+}
+
+.your-answer.incorrect .answer-icon {
+  color: #fff;
+  background: #e74c3c;
+}
+
+.answer-text {
+  color: #ffffffe6;
+}
+
+.action-buttons {
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.home-button, .retry-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
   font-size: 1.1rem;
-  line-height: 1.6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
 }
 
 .home-button {
   color: #fff;
-  background: linear-gradient(to right, #ff4757, #ff6b81);
-  border-radius: 10px;
-  padding: .9rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background .3s, transform .3s;
-  display: inline-block;
-  box-shadow: 0 0 12px #ff475780;
+  background: linear-gradient(135deg, #ff4757, #ff6b81);
 }
 
 .home-button:hover {
-  background: linear-gradient(to right, #ff6b81, #ff4757);
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #ff475766;
 }
 
-.home-button:active {
-  transform: scale(.98);
+.retry-button {
+  color: #fff;
+  background: #ffffff1a;
+  border: 1px solid #ffffff4d;
+}
+
+.retry-button:hover {
+  background: #fff3;
+  transform: translateY(-2px);
+}
+
+@media (width <= 768px) {
+  .score-page {
+    padding: 1rem;
+  }
+
+  .score-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .score-header h1 {
+    font-size: 2rem;
+  }
+
+  .score-main {
+    font-size: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .review-header {
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (width <= 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-main {
+    font-size: 2rem;
+  }
+
+  .score-percentage {
+    font-size: 1.2rem;
+  }
 }
 
 

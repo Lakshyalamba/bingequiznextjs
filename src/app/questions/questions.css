@@ -1,8 +1,5 @@
 .questions-container {
   min-height: 100vh;
-  padding: 6rem 2rem 4rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
   background: url('/background.avif') no-repeat center center/cover;
   position: relative;
   display: flex;
@@ -10,7 +7,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  z-index: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  padding: 2rem;
 }
 
 .questions-container::before {
@@ -20,124 +18,326 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 0;
 }
 
-/* Back Button */
-.back-button, .home-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+/* Header */
+.quiz-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quiz-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4757;
+  text-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+.progress-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.progress-text {
   font-size: 1rem;
-  color: white;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-  font-weight: bold;
-  z-index: 1;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
 }
 
-.back-button:hover, .home-button:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+.progress-bar {
+  width: 200px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.home-button {
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4757, #ff6b81);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Main Quiz Content */
+.quiz-content {
   position: relative;
-  top: auto;
-  left: auto;
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #ff4757;
-}
-
-.home-button:hover {
-  background-color: #ff1c1c;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 100px;
 }
 
 /* Question Card */
 .question-card {
-  background: linear-gradient(145deg, #292929, #1f1f1f);
-  padding: 2.5rem;
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 16px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease-in-out;
-  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .question-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(255, 71, 87, 0.2);
 }
 
-.question-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1.8rem;
-  color: #ff6b81;
-  font-weight: bold;
+.question-number {
+  font-size: 0.9rem;
+  color: #ff4757;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  line-height: 1.4;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Options */
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  align-items: center;
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-.options button {
-  padding: 1rem 1.4rem;
-  background: #ff4757;
+.option-button {
+  padding: 1.2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.option-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.option-button:hover {
+  background: rgba(255, 71, 87, 0.2);
+  border-color: rgba(255, 71, 87, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 71, 87, 0.3);
+}
+
+.option-button:hover::before {
+  left: 100%;
+}
+
+.option-button:active {
+  transform: translateY(0);
+}
+
+.option-letter {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 71, 87, 0.3);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 71, 87, 0.1);
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  color: #ff4757;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  z-index: 101;
+}
+
+.back-button:hover {
+  background: rgba(255, 71, 87, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 3rem;
+}
+
+.error-state h2 {
+  font-size: 2rem;
+  color: #ff4757;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.home-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #ff4757, #ff6b81);
   border: none;
+  border-radius: 12px;
   color: white;
   font-size: 1.1rem;
-  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  width: 100%;
-  max-width: 350px;
-  transition: background 0.3s, transform 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  box-shadow: 0 0 12px rgba(255, 71, 87, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.options button:hover {
-  background: #ff1c1c;
-  transform: scale(1.05);
+.home-button:hover {
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 71, 87, 0.4);
 }
 
-.options button:active {
-  background: #e60000;
-  transform: scale(1);
+/* Loading State */
+.loading-state {
+  text-align: center;
+  padding: 3rem;
 }
 
-/* Example Emojis */
-.options button::before {
-  content: '🎬';
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #ff4757;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
   font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* Progress */
-.progress {
-  margin-top: 2rem;
-  font-size: 1.3rem;
-  color: #ffc107;
-  font-weight: bold;
+/* Responsive */
+@media (max-width: 768px) {
+  .questions-container {
+    padding: 1rem;
+  }
+  
+  .quiz-header {
+    padding: 1rem;
+  }
+  
+  .progress-info {
+    gap: 1rem;
+  }
+  
+  .progress-bar {
+    width: 150px;
+  }
+  
+  .question-card {
+    padding: 2rem 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .question-text {
+    font-size: 1.2rem;
+  }
+  
+  .option-button {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
 }
 
-.progress::before {
-  content: "📊 ";
-}
-
-/* Feedback text */
-p {
-  margin-top: 2rem;
-  font-size: 1rem;
-  color: #eee;
-  font-style: italic;
+@media (max-width: 480px) {
+  .quiz-header {
+    padding: 0.8rem;
+  }
+  
+  .quiz-logo {
+    font-size: 1.2rem;
+  }
+  
+  .progress-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+  }
+  
+  .question-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+  }
+  
+  .option-button {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .option-letter {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+  }
 }

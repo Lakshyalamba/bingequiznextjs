@@ -6,6 +6,7 @@
   background: url('/background.avif') no-repeat center center/cover;
   position: relative;
   color: white;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 .login-container::before {
@@ -15,10 +16,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
-
 
 .back-button {
   position: absolute;
@@ -27,86 +27,190 @@
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.15);
-  padding: 6px 14px;
-  border-radius: 6px;
-  z-index: 1;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  background: rgba(255, 71, 87, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 2;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 71, 87, 0.3);
 }
 
 .back-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 71, 87, 0.3);
+  transform: translateY(-2px);
 }
 
 .form-box {
   position: relative;
-  background-color: rgba(30, 30, 30, 0.9);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
   padding: 3rem 3rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   text-align: center;
   z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.1) 0%, transparent 50%);
+  border-radius: 20px;
+  pointer-events: none;
 }
 
 .form-box h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.9rem;
-  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
 }
 
 .form-box form {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  position: relative;
 }
 
 .form-box input {
-  padding: 0.9rem;
-  margin-bottom: 1.2rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #2e2e2e;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
   color: white;
   font-size: 1rem;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-box input:focus {
-  outline: none;
-  background-color: #3a3a3a;
+  border-color: #ff4757;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.2);
 }
 
 .form-box button {
-  padding: 0.9rem;
-  background-color: #ff4757;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ff4757, #ff6b81);
   border: none;
   color: white;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+  margin-top: 1rem;
 }
 
 .form-box button:hover {
-  background-color: #ff6b81;
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
 }
 
-.form-box p {
-  margin-top: 1.2rem;
-  font-size: 0.95rem;
-  color: #ccc;
+.form-box button:active {
+  transform: translateY(0);
 }
 
-.form-box span {
-  color: #1e90ff;
+.toggle-text {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-link {
+  color: #ff4757;
   cursor: pointer;
-  text-decoration: underline;
-  transition: color 0.2s;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.form-box span:hover {
-  color: #63b3ed;
+.toggle-link:hover {
+  color: #ff6b81;
+  text-decoration: underline;
+}
+
+.form-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.benefits {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.benefits h4 {
+  color: #ff4757;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.benefit-item span {
+  margin-right: 0.5rem;
+  color: #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-box {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+  
+  .form-box h2 {
+    font-size: 1.8rem;
+  }
+  
+  .back-button {
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .benefit-item {
+    font-size: 0.8rem;
+  }
 }

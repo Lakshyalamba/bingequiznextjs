@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Inter, Segoe UI, sans-serif;
   display: flex;
   position: relative;
 }
@@ -12,7 +13,7 @@
 .login-container:before {
   content: "";
   z-index: 0;
-  background: #000000b3;
+  background: #000c;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -22,93 +23,193 @@
 
 .back-button {
   color: #fff;
-  z-index: 1;
-  background-color: #ffffff26;
-  border-radius: 6px;
-  padding: 6px 14px;
+  z-index: 2;
+  background: #ff475733;
+  border: 1px solid #ff47574d;
+  border-radius: 8px;
+  padding: 10px 20px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
-  transition: background-color .2s;
+  transition: all .3s;
   position: absolute;
   top: 20px;
   left: 30px;
 }
 
 .back-button:hover {
-  background-color: #ffffff4d;
+  background: #ff47574d;
+  transform: translateY(-2px);
 }
 
 .form-box {
+  backdrop-filter: blur(20px);
   text-align: center;
   z-index: 1;
-  background-color: #1e1e1ee6;
-  border-radius: 16px;
+  background: #000000d9;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 3rem;
   position: relative;
-  box-shadow: 0 8px 25px #0009;
+  box-shadow: 0 20px 40px #0009;
+}
+
+.form-box:before {
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(135deg, #ff47571a 0%, #0000 50%);
+  border-radius: 20px;
+  position: absolute;
+  inset: 0;
 }
 
 .form-box h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.9rem;
-  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 10px #ff47574d;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .form-box form {
   flex-direction: column;
+  gap: 1.5rem;
   display: flex;
+}
+
+.input-group {
+  position: relative;
 }
 
 .form-box input {
   color: #fff;
-  background-color: #2e2e2e;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 1.2rem;
-  padding: .9rem;
+  background: #ffffff0d;
+  border: 2px solid #ffffff1a;
+  border-radius: 12px;
+  outline: none;
+  width: 100%;
+  padding: 1rem 1.2rem;
   font-size: 1rem;
-  transition: background-color .3s;
+  transition: all .3s;
+}
+
+.form-box input::placeholder {
+  color: #fff9;
 }
 
 .form-box input:focus {
-  background-color: #3a3a3a;
-  outline: none;
+  background: #ffffff1a;
+  border-color: #ff4757;
+  box-shadow: 0 0 0 3px #ff475733;
 }
 
 .form-box button {
   color: #fff;
   cursor: pointer;
-  background-color: #ff4757;
+  background: linear-gradient(135deg, #ff4757, #ff6b81);
   border: none;
-  border-radius: 8px;
-  padding: .9rem;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color .3s;
+  border-radius: 12px;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all .3s;
+  box-shadow: 0 4px 15px #ff475766;
 }
 
 .form-box button:hover {
-  background-color: #ff6b81;
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #ff475799;
 }
 
-.form-box p {
-  color: #ccc;
-  margin-top: 1.2rem;
-  font-size: .95rem;
+.form-box button:active {
+  transform: translateY(0);
 }
 
-.form-box span {
-  color: #1e90ff;
+.toggle-text {
+  color: #fffc;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.toggle-link {
+  color: #ff4757;
   cursor: pointer;
-  text-decoration: underline;
-  transition: color .2s;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
 }
 
-.form-box span:hover {
-  color: #63b3ed;
+.toggle-link:hover {
+  color: #ff6b81;
+  text-decoration: underline;
+}
+
+.form-icon {
+  opacity: .8;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.subtitle {
+  color: #ffffffb3;
+  margin-bottom: 2rem;
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+.benefits {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.benefits h4 {
+  color: #ff4757;
+  text-align: center;
+  margin-bottom: .8rem;
+  font-size: 1rem;
+}
+
+.benefit-item {
+  color: #fffc;
+  align-items: center;
+  margin-bottom: .6rem;
+  font-size: .9rem;
+  display: flex;
+}
+
+.benefit-item span {
+  color: #ff4757;
+  margin-right: .5rem;
+}
+
+@media (width <= 480px) {
+  .form-box {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .form-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: .9rem;
+    top: 15px;
+    left: 15px;
+  }
+
+  .subtitle {
+    font-size: .85rem;
+  }
+
+  .benefit-item {
+    font-size: .8rem;
+  }
 }
 
 

@@ -3,19 +3,15 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, Suspense } from 'react';
 import './questions.css';
 
-// Tell Next.js this is a dynamic page
 export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
 
-// Import the questions data
 import { allQuestions } from '../data/questions';
 
-// Component that uses searchParams
 function QuestionsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  // Get movie parameter from URL
   const movieParam = searchParams?.get('movie')?.toLowerCase() || '';
   const numParam = Number(searchParams?.get('numQuestions')) || 10;
   const numQuestions = Math.min(numParam, 10);
@@ -25,13 +21,26 @@ function QuestionsContent() {
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [userAnswers, setUserAnswers] = useState([]);
 
   const currentQuestion = limitedQuestions[currentQuestionIndex] || null;
+  const progressPercentage = ((currentQuestionIndex + 1) / limitedQuestions.length) * 100;
   
   const handleAnswer = (selectedOption) => {
     if (!currentQuestion) return;
     
     const isCorrect = selectedOption === currentQuestion.answer;
+    const newAnswer = {
+      question: currentQuestion.question,
+      userAnswer: selectedOption,
+      correctAnswer: currentQuestion.answer,
+      isCorrect: isCorrect,
+      options: currentQuestion.options
+    };
+    
+    const updatedAnswers = [...userAnswers, newAnswer];
+    setUserAnswers(updatedAnswers);
+    
     if (isCorrect) {
       setScore(score + 1);
     }
@@ -39,46 +48,76 @@ function QuestionsContent() {
     if (currentQuestionIndex + 1 < limitedQuestions.length) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      router.push(`/score?score=${score + (isCorrect ? 1 : 0)}&total=${limitedQuestions.length}`);
+      const finalScore = score + (isCorrect ? 1 : 0);
+      const encodedAnswers = encodeURIComponent(JSON.stringify(updatedAnswers));
+      router.push(`/score?score=${finalScore}&total=${limitedQuestions.length}&answers=${encodedAnswers}`);
     }
   };
 
   if (!movieQuestions.length || !currentQuestion) {
     return (
       <div className="questions-container">
-        <h2>❌ No questions found for this movie. Please try a different one.</h2>
-        <a href="/home" className="home-button">🔙 Go Back to Home</a>
+        <div className="error-state">
+          <h2>No Questions Available</h2>
+          <p>Sorry, we couldn't find questions for this movie. Please try selecting a different movie.</p>
+          <a href="/home" className="home-button">Back to Home</a>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="questions-container">
-      <h2 className="progress">📍 Question {currentQuestionIndex + 1} of {limitedQuestions.length}</h2>
-      <div className="question-card">
-        <h3>{currentQuestion.question}</h3>
-        <div className="options">
-          {currentQuestion.options.map((option, index) => (
-            <button key={index} onClick={() => handleAnswer(option)}>
-              {option}
-            </button>
-          ))}
+      {/* Header */}
+      <header className="quiz-header">
+        <div className="header-content">
+          <div className="quiz-logo">BingeQuiz</div>
+          <div className="progress-info">
+            <span className="progress-text">Question {currentQuestionIndex + 1} of {limitedQuestions.length}</span>
+            <div className="progress-bar">
+              <div className="progress-fill" style={{width: `${progressPercentage}%`}}></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Back Button */}
+      <a href="/home" className="back-button">Back to Home</a>
+
+      {/* Quiz Content */}
+      <div className="quiz-content">
+        <div className="question-card">
+          <div className="question-number">Question {currentQuestionIndex + 1}</div>
+          <h2 className="question-text">{currentQuestion.question}</h2>
+          <div className="options-grid">
+            {currentQuestion.options.map((option, index) => (
+              <button 
+                key={index} 
+                className="option-button"
+                onClick={() => handleAnswer(option)}
+              >
+                <span className="option-letter">{String.fromCharCode(65 + index)}</span>
+                {option}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-// Loading fallback component
 function QuestionsLoading() {
   return (
     <div className="questions-container">
-      <h2>Loading questions...</h2>
+      <div className="loading-state">
+        <div className="loading-spinner"></div>
+        <p className="loading-text">Loading your movie quiz...</p>
+      </div>
     </div>
   );
 }
 
-// Main component with Suspense boundary
 export default function QuestionsPage() {
   return (
     <Suspense fallback={<QuestionsLoading />}>
